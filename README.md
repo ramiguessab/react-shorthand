@@ -16,10 +16,24 @@ React Component library that have some conditional operations and array method a
   - Find
   - Filter
 
+## Props
+
+- If/IfElse:
+
+  - condition
+
+- And/Or:
+
+  - array
+
+- array:
+  - array
+  - handler
+
 ## Demo
 
 ```javascript
-import { array, IfElse } from "rprc";
+import { array, IfElse } from "react-shorthand";
 
 function App() {
   return (
