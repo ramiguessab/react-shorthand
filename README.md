@@ -4,11 +4,25 @@ React Component library that have some conditional operations and array method a
 
 **[NPM Registry](https://www.npmjs.com/package/react-shorthand)**
 
-    ```javascript
-    import { array, IfElse } from "rprc";
+## Components
 
-    function App() {
-    return (
+- If
+- IfElse
+- And
+- Or
+- array
+  - Map
+  - Every
+  - Find
+  - Filter
+
+## Demo
+
+```javascript
+import { array, IfElse } from "rprc";
+
+function App() {
+  return (
     <array.Map
       array={["a", "b"]}
       handler={(item, index) => (
@@ -22,9 +36,8 @@ React Component library that have some conditional operations and array method a
         </IfElse>
       )}
     />
+  );
+}
 
-    );
-    }
-
-    export default App;
-    ```
+export default App;
+```
