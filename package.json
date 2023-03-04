@@ -1,10 +1,14 @@
 {
   "name": "react-shorthand",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "module": "dist/index.es.js",
   "main": "dist/index.js",
   "author": "Rami Guessab <ramiguessab94@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ramiguessab/react-shorthand.git"
+  },
   "type": "module",
   "files": [
     "dist"
