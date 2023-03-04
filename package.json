@@ -1,6 +1,6 @@
 {
-  "name": "test-rprc",
-  "version": "0.0.1",
+  "name": "react-shorthand",
+  "version": "0.0.2",
   "module": "dist/index.es.js",
   "main": "dist/index.js",
   "author": "Rami Guessab <ramiguessab94@gmail.com>",
@@ -14,17 +14,16 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
     "react": "^18.2.0",
     "rollup": "^3.18.0",
     "rollup-plugin-peer-deps-external": "^2.2.4"
   },
   "peerDependencies": {
     "react": "^18.2.0"
-  },
-  "dependencies": {
-    "@babel/preset-env": "^7.20.2"
   }
 }
