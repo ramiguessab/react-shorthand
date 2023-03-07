@@ -6,12 +6,12 @@ React Component library that have some conditional operations and array method a
 
 ## Components
 
-- If
-- IfElse
-- Switch
-- And
-- Or
-- array
+- **If**
+- **IfElse**
+- **Switch**
+- **And**
+- **Or**
+- **array**
   - Map
   - Every
   - Find
@@ -20,6 +20,10 @@ React Component library that have some conditional operations and array method a
 ## Demo
 
 - ### **array / IfElse**
+
+> **If/IfElse** take same Props
+>
+> All **array** methods take same Props
 
 ```javascript
 import { array, IfElse } from "react-shorthand";
@@ -72,8 +76,10 @@ export default App;
 
 - ### **Or/And**
 
+> **And/Or** take same Props
+
 ```javascript
-import { Or } from "rprc";
+import { Or } from "react-shorthand";
 
 function App() {
   return <Or array={[null, "1"]} />;
