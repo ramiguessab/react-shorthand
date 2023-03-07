@@ -21,7 +21,7 @@ React Component library that have some conditional operations and array method a
 
 - ### **array / IfElse**
 
-> **If/IfElse** take same Props
+> **If/IfElse** take same Props (**key** prop is for the Map method handler)
 >
 > All **array** methods take same Props
 
