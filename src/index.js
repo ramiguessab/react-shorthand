@@ -1,2 +1,2 @@
-export { If, IfElse, And, Or } from "./condition/index";
+export { If, IfElse, And, Or, Switch } from "./condition/index";
 export * as array from "./array/index";

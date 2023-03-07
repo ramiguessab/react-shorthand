@@ -8,6 +8,7 @@ React Component library that have some conditional operations and array method a
 
 - If
 - IfElse
+- Switch
 - And
 - Or
 - array
@@ -16,21 +17,9 @@ React Component library that have some conditional operations and array method a
   - Find
   - Filter
 
-## Props
-
-- If/IfElse:
-
-  - condition
-
-- And/Or:
-
-  - array
-
-- array:
-  - array
-  - handler
-
 ## Demo
+
+- ### **array / IfElse**
 
 ```javascript
 import { array, IfElse } from "react-shorthand";
@@ -44,6 +33,7 @@ function App() {
           <IfElse.If>
             <p>{item}</p>
           </IfElse.If>
+
           <IfElse.Else>
             <p>Nothing</p>
           </IfElse.Else>
@@ -51,6 +41,42 @@ function App() {
       )}
     />
   );
+}
+
+export default App;
+```
+
+- ### **Switch**
+
+```javascript
+import { Switch } from "react-shorthand";
+
+function App() {
+  return (
+    <Switch expression={"expression"}>
+      <Switch.Case match="boo" children={<p>boo</p>} />
+
+      <Switch.Case match="foo">
+        <p>foo</p>
+      </Switch.Case>
+
+      <Switch.Default>
+        <p>bar</p>
+      </Switch.Default>
+    </Switch>
+  );
+}
+
+export default App;
+```
+
+- ### **Or/And**
+
+```javascript
+import { Or } from "rprc";
+
+function App() {
+  return <Or array={[null, "1"]} />;
 }
 
 export default App;

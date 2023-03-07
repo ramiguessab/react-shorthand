@@ -1,4 +1,5 @@
 export { IfElse } from "./IfElse";
+export { Switch } from "./Switch";
 export function If({ condition, children }) {
   if (condition) {
     return children;
