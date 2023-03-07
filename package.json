@@ -6,10 +6,10 @@
     "react-shorthand",
     "react-helper",
     "conditions",
-    "array methods",
     "array",
-    "react-pretify",
-    "react-prettier"
+    "methods",
+    "modules",
+    "utils"
   ],
   "version": "0.0.53",
   "module": "dist/index.es.js",
