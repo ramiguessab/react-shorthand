@@ -13,7 +13,7 @@ React Component library that have some conditional operations and array method a
 - **Or**
 - **array**
   - Map
-  - Every
+  - At
   - Find
   - Filter
 
@@ -24,6 +24,7 @@ React Component library that have some conditional operations and array method a
 > **If/IfElse** take same Props (**key** prop is for the Map method handler)
 >
 > All **array** methods take same Props
+> (Only **At** takes **array** & **index** & optional **Wrapper**)
 
 ```javascript
 import { array, IfElse } from "react-shorthand";
