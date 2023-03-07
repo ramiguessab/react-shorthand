@@ -1,5 +1,16 @@
 {
   "name": "react-shorthand",
+  "keywords": [
+    "react",
+    "react-dom",
+    "react-shorthand",
+    "react-helper",
+    "conditions",
+    "array methods",
+    "array",
+    "react-pretify",
+    "react-prettier"
+  ],
   "version": "0.0.52",
   "module": "dist/index.es.js",
   "author": "Rami Guessab <ramiguessab94@gmail.com>",
