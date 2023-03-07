@@ -1,7 +1,7 @@
 import React from "react";
 
 export function Map({ array, handler }) {
-  return array.map(handler());
+  return array.map(handler);
 }
 
 export function Find({ array, handler }) {
