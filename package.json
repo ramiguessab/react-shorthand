@@ -1,6 +1,6 @@
 {
   "name": "react-shorthand",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "module": "dist/index.es.js",
   "author": "Rami Guessab <ramiguessab94@gmail.com>",
   "license": "MIT",
