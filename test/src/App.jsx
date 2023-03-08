@@ -1,23 +1,18 @@
-import { array } from "rprc";
+import { IfElse } from "rprc";
 
-function Hello({ item, id }) {
-  return (
-    <>
-      <h1>{item}</h1>
-      <h2>{id}</h2>
-    </>
-  );
-}
+const variable = "Hi";
 
 function App() {
   return (
-    <array.Map
-      array={[
-        { id: 38478322, item: "2" },
-        { id: 57859089, item: "1" },
-      ]}
-      Wrapper={Hello}
-    />
+    <IfElse condition={variable === "Bay Bay"}>
+      <IfElse.If>
+        <p>How Are You???</p>
+      </IfElse.If>
+
+      <IfElse.Else>
+        <p>Good Bay</p>
+      </IfElse.Else>
+    </IfElse>
   );
 }
 

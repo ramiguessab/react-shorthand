@@ -3,14 +3,17 @@ import React from "react";
 function IfElse({ condition, children }) {
   children = React.Children.toArray(children);
 
-  const If = children.find(
-    (child) => child.type && child.type.displayName == "If"
-  );
-  const Else = children.find(
-    (child) => child.type && child.type.displayName == "Else"
-  );
-
-  return condition ? If : Else || null;
+  if (condition) {
+    return children.find(
+      (child) => child.type && child.type.displayName == "If"
+    );
+  } else {
+    return (
+      children.find(
+        (child) => child.type && child.type.displayName == "Else"
+      ) || null
+    );
+  }
 }
 
 function IfBlock({ children }) {

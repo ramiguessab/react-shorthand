@@ -1,7 +1,14 @@
 import React from "react";
+import { nanoid } from "nanoid";
 
-export function Map({ array, handler }) {
-  return array.map(handler);
+export function Map({ array, Wrapper }) {
+  return array.map((item, index) => (
+    <Wrapper
+      item={item}
+      index={index}
+      key={item.key || item.id || item._id || nanoid()}
+    />
+  ));
 }
 
 export function Find({ array, handler }) {
