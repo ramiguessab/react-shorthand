@@ -47,7 +47,7 @@ React Component library that have some conditional operations and array method a
 
   > - **At**(\*array, \*index, Wrapper)
   > - **Map**(\*array, \*Wrapper) / **PS**: No need to specify a key \
-  > - **Find/Filter**(\*array, \*handler)
+  > - **Find/Filter/Every**(\*array, \*handler)
 
   ```javascript
   import { array } from "react-shorthand";
@@ -71,6 +71,26 @@ React Component library that have some conditional operations and array method a
         ]}
         Wrapper={Wrapper}
       />
+    );
+  }
+  ```
+
+  - **Every**
+
+  ```javascript
+  import { array } from "rprc";
+
+  function App() {
+    return (
+      <array.Every array={["1", "2"]} handler={(item) => item === "2"}>
+        <array.Every.True>
+          <p>Hello</p>
+        </array.Every.True>
+
+        <array.Every.False>
+          <p>Good Bay</p>
+        </array.Every.False>
+      </array.Every>
     );
   }
   ```
@@ -105,6 +125,18 @@ React Component library that have some conditional operations and array method a
   import { Or } from "react-shorthand";
 
   function App() {
-    return <Or array={[null, "1"]} />;
+    return <Or array={[null, "foo"]} />;
+  }
+  ```
+
+  ```javascript
+  import { And } from "react-shorthand";
+
+  function App() {
+    return (
+      <And array={["foo", "bar"]}>
+        <p>Hello</p>
+      </And>
+    );
   }
   ```

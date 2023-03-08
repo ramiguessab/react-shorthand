@@ -1,4 +1,5 @@
 import React from "react";
+
 import { nanoid } from "nanoid";
 
 export function Map({ array, Wrapper }) {
@@ -11,18 +12,16 @@ export function Map({ array, Wrapper }) {
   ));
 }
 
-export function Find({ array, handler }) {
-  return array.find(handler);
+function Generic(action) {
+  return ({ array, handler, children }) => {
+    const result = array[action](handler) || null;
+
+    return typeof children === "function" ? children(result) : result;
+  };
 }
 
-export function Filter({ array, handler }) {
-  return array.filter(handler);
-}
+export const Find = Generic("find");
+export const Filter = Generic("filter");
+export const At = Generic("at");
 
-export function At({ array, index, Wrapper }) {
-  return Wrapper === undefined ? (
-    array.at(index)
-  ) : (
-    <Wrapper>{array.at(index)}</Wrapper>
-  );
-}
+export { Every } from "./Every";

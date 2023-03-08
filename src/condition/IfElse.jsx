@@ -4,8 +4,9 @@ function IfElse({ condition, children }) {
   children = React.Children.toArray(children);
 
   if (condition) {
-    return children.find(
-      (child) => child.type && child.type.displayName == "If"
+    return (
+      children.find((child) => child.type && child.type.displayName == "If") ||
+      null
     );
   } else {
     return (

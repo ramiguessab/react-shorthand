@@ -1,18 +1,10 @@
-import { IfElse } from "rprc";
-
-const variable = "Hi";
+import { Or } from "rprc";
 
 function App() {
   return (
-    <IfElse condition={variable === "Bay Bay"}>
-      <IfElse.If>
-        <p>How Are You???</p>
-      </IfElse.If>
-
-      <IfElse.Else>
-        <p>Good Bay</p>
-      </IfElse.Else>
-    </IfElse>
+    <Or array={[null, "1"]}>
+      <p>Hello</p>
+    </Or>
   );
 }
 
