@@ -11,7 +11,7 @@
     "modules",
     "utils"
   ],
-  "version": "0.1.2",
+  "version": "0.2.0",
   "module": "dist/index.es.js",
   "author": "Rami Guessab <ramiguessab94@gmail.com>",
   "license": "MIT",
@@ -39,7 +39,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "nanoid": "^4.0.1"
+    "nanoid": "^4.0.1",
+    "react": "^18.2.0"
   }
 }
