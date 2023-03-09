@@ -1,5 +1,7 @@
 # React-Shorthand
 
+$${/color{red}We really appreciate your use of our module but please make in consideration that it is still in devloppement phase}$$
+
 React Component library that have some conditional operations and array method as components
 
 **[NPM Registry](https://www.npmjs.com/package/react-shorthand)**
