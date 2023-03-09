@@ -1,10 +1,16 @@
-import { Or } from "rprc";
+import { array } from "rprc";
 
 function App() {
   return (
-    <Or array={[null, "1"]}>
-      <p>Hello</p>
-    </Or>
+    <array.Every array={["1", "1"]} handler={(item) => item === "2"}>
+      <array.Every.True>
+        <p>Hello</p>
+      </array.Every.True>
+
+      <array.Every.False>
+        <p>Good Bay</p>
+      </array.Every.False>
+    </array.Every>
   );
 }
 

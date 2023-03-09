@@ -1,4 +1,5 @@
 import React from "react";
+import { Generic1 } from "./Generic1";
 
 import { nanoid } from "nanoid";
 
@@ -24,4 +25,5 @@ export const Find = Generic("find");
 export const Filter = Generic("filter");
 export const At = Generic("at");
 
-export { Every } from "./Every";
+export const Every = Generic1("every");
+export const Some = Generic1("some");

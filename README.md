@@ -19,7 +19,7 @@ React Component library that have some conditional operations and array method a
 
 ## Demo
 
-- ### IfElse
+- ### **IfElse**
 
   > **If/IfElse** take same Props (**key** prop is for the Map method handler)
 
@@ -75,7 +75,7 @@ React Component library that have some conditional operations and array method a
   }
   ```
 
-  - **Every**
+  - **Every/Some**
 
   ```javascript
   import { array } from "rprc";
@@ -91,6 +91,18 @@ React Component library that have some conditional operations and array method a
           <p>Good Bay</p>
         </array.Every.False>
       </array.Every>
+    );
+  }
+  ```
+
+  ```javascript
+  import { array } from "rprc";
+
+  function App() {
+    return (
+      <array.Some array={["1", "1"]} handler={(item) => item === "1"}>
+        <p>Hello</p>
+      </array.Some>
     );
   }
   ```
