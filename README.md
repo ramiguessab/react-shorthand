@@ -47,7 +47,7 @@ React Component library that have some conditional operations and array method a
 
   > - **At**(\*array, \*index, Wrapper)
   > - **Map**(\*array, \*Wrapper) / **PS**: No need to specify a key \
-  > - **Find/Filter/Every**(\*array, \*handler)
+  > - **Find/Filter/Every/Some**(\*array, \*handler)
 
   ```javascript
   import { array } from "react-shorthand";
