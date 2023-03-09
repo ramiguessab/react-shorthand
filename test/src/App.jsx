@@ -2,7 +2,7 @@ import { array } from "rprc";
 
 function App() {
   return (
-    <array.Every array={["1", "1"]} handler={(item) => item === "2"}>
+    <array.Every array={["1", "1"]} handler={(item) => item === "1"}>
       <array.Every.True>
         <p>Hello</p>
       </array.Every.True>

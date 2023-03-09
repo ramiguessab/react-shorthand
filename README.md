@@ -24,7 +24,7 @@ React Component library that have some conditional operations and array method a
   > **If/IfElse** take same Props (**key** prop is for the Map method handler)
 
   ```javascript
-  import { IfElse } from "rprc";
+  import { IfElse } from "react-shorthand";
 
   const variable = "Hello";
 
@@ -78,7 +78,7 @@ React Component library that have some conditional operations and array method a
   - **Every/Some**
 
   ```javascript
-  import { array } from "rprc";
+  import { array } from "react-shorthand";
 
   function App() {
     return (
@@ -96,7 +96,7 @@ React Component library that have some conditional operations and array method a
   ```
 
   ```javascript
-  import { array } from "rprc";
+  import { array } from "react-shorthand";
 
   function App() {
     return (

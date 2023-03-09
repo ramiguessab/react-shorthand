@@ -1,5 +1,6 @@
 export { IfElse } from "./IfElse";
 export { Switch } from "./Switch";
+
 export function If({ condition, children }) {
   if (condition) {
     return children;
@@ -7,6 +8,7 @@ export function If({ condition, children }) {
     return null;
   }
 }
+
 export function And({ array, children }) {
   for (let i = 0; i < array.length; i++) {
     if (!array[i]) {
@@ -15,6 +17,7 @@ export function And({ array, children }) {
   }
   return children === undefined ? array[array.length - 1] : children;
 }
+
 export function Or({ array, children }) {
   const result = array.find((item) => item);
 
