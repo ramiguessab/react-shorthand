@@ -20,6 +20,8 @@ React Component library that have some conditional operations and array method a
   - At
   - Find
   - Filter
+  - Every
+  - Some
 
 ## Demo
 
