@@ -1,6 +1,8 @@
 # React-Shorthand
 
-$${/color{red}We really appreciate your use of our module but please make in consideration that it is still in devloppement phase}$$
+> **Warning**
+>
+> We really appreciate your use of our module but please put in considerations that it is still in developpement phase
 
 React Component library that have some conditional operations and array method as components
 
