@@ -25,6 +25,10 @@ React Component library that have some conditional operations and array method a
 
 ## Demo
 
+> **Note**
+>
+> **If there are 2 components grouped togther it means the two can be wroten in all the demoed methods (ex: Every/Some)**
+
 - ### **IfElse**
 
   > **If/IfElse** take same Props (**key** prop is for the Map method handler)
