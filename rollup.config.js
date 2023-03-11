@@ -22,7 +22,7 @@ export default {
       babelHelpers: "bundled",
     }),
     nodeResolve({ extensions }),
-    //terser(),
+    terser(),
     external(),
   ],
   external: ["react"],
